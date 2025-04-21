@@ -36,7 +36,7 @@ public class CataloguePage extends AbstractComponent {
     }
 
     public List<WebElement> getProducts() {
-        waitForElement(productsLocator);
+        waitForElementToAppear(productsLocator);
         return products;
     }
 
