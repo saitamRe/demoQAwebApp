@@ -1,7 +1,6 @@
-package pageobjects;
+package demoQA.pageObjects;
 
-import abstractComponents.AbstractComponent;
-import org.openqa.selenium.By;
+import demoQA.abstractComponents.AbstractComponent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,19 +20,20 @@ public class LandingPage extends AbstractComponent {
     //Page factory pattern
 
     @FindBy(id = "userPassword")
-    WebElement userEmail;
+    private WebElement userEmail;
 
     @FindBy(id = "userEmail")
-    WebElement userPassword;
+    private WebElement userPassword;
 
     @FindBy(id = "login")
-    WebElement submitBtn;
+    private WebElement submitBtn;
 
-    public void login(String email, String password)
+    public CataloguePage login(String email, String password)
     {
         userEmail.sendKeys(email);
         userPassword.sendKeys(password);
         submitBtn.click();
+        return new CataloguePage(driver);
     }
 
     public void goTo()
