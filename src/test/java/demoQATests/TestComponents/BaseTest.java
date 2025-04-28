@@ -5,6 +5,7 @@ import demoQA.pageObjects.LandingPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
@@ -31,7 +32,7 @@ public class BaseTest {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
 
-        } else if (browserName == "firefox") {
+        } else if (browserName.equalsIgnoreCase("firefox")) {
             //use firefox
         }
 
@@ -40,17 +41,18 @@ public class BaseTest {
     }
 
     @BeforeMethod
-    public LandingPage launchApp() throws IOException {
+    public void launchApp() throws IOException {
         driver = initDriver();
         lp = new LandingPage(driver);
         lp.goTo();
-        return lp;
+        //return lp;
 
     }
 
-    @AfterTest
-    public void tearDown()
-    {
-        driver.close();
+    @AfterMethod
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
     }
 }
