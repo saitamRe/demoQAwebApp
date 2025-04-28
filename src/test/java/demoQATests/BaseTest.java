@@ -1,4 +1,4 @@
-package demoQATests.TestComponents;
+package demoQATests;
 
 
 import demoQA.pageObjects.LandingPage;

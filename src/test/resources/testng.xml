@@ -4,8 +4,7 @@
 
     <test name="MyTest">
         <classes>
-            <class name="DemoTest"/>
-
+            <class name="demoQATests.Tests.DemoTest"></class>
             <!-- Add more classes as needed -->
         </classes>
     </test>

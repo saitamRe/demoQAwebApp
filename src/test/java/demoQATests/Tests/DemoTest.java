@@ -1,4 +1,6 @@
-import demoQATests.TestComponents.BaseTest;
+package demoQATests.Tests;
+
+import demoQATests.BaseTest;
 import org.testng.annotations.Test;
 
 
