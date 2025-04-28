@@ -4,7 +4,7 @@
 
     <test name="MyTest">
         <classes>
-            <class name="demoTest1"/>
+            <class name="DemoTest"/>
 
             <!-- Add more classes as needed -->
         </classes>

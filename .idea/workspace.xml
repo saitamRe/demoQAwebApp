@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90102ce4-5666-413b-ba3f-4e461e9a5b9c" name="Changes" comment="morePoms + basic infrastructure">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demoQATests/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoQATests/TestComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/demoTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/DemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.demoTest1">
+  <component name="RunManager" selected="TestNG.DemoTest">
     <configuration name="AppTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoQA" />
       <extension name="coverage">
@@ -122,6 +122,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoQA" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DemoTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="demoJavaProjects" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="demoQA" />
       <extension name="coverage">
@@ -138,21 +150,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demoTest1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="demoQA" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="demoTest1" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.demoTest1" />
+        <item itemvalue="TestNG.DemoTest" />
         <item itemvalue="TestNG.C:/Users/ROKO000000100/IdeaProjects/demoQA/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.demoJavaProjects" />
         <item itemvalue="JUnit.AppTest (1)" />
@@ -201,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745761645977</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="morePoms + basic infrastructure">
+      <option name="closed" value="true" />
+      <created>1745820991468</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745820991468</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +238,17 @@
     <MESSAGE value="couple poms and sample test" />
     <MESSAGE value="morePoms + basic infrastructure" />
     <option name="LAST_COMMIT_MESSAGE" value="morePoms + basic infrastructure" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/demoQATests/TestComponents/BaseTest.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demoQA$AppTest__1_.ic" NAME="AppTest (1) Coverage Results" MODIFIED="1745152366536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
