@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="MySuite" parallel="false">
 
+    <listeners>
+        <listener class-name="demoQATests.TestComponents.Listeners"></listener>
+    </listeners>
+    
     <test name="MyTest">
         <classes>
             <class name="demoQATests.Tests.DemoTest"></class>
