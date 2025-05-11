@@ -1,18 +1,19 @@
-package demoQATests;
+package demoQATests.TestComponents;
 
 
 import demoQA.pageObjects.LandingPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
+import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Properties;
 
 public class BaseTest {
@@ -40,6 +41,7 @@ public class BaseTest {
         return driver;
     }
 
+
     @BeforeMethod
     public void launchApp() throws IOException {
         driver = initDriver();
@@ -54,5 +56,12 @@ public class BaseTest {
         if (driver != null) {
             driver.quit();
         }
+    }
+
+    public String takeScreenshot(String tcName, WebDriver driver) throws IOException {
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String path = System.getProperty("user.dir") + "/Reports/" + tcName + ".png";
+        FileUtils.copyFile(src, new File(path));
+        return path;
     }
 }

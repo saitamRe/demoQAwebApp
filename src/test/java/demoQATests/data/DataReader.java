@@ -1,4 +1,4 @@
-package data;
+package demoQATests.data;
 
 import org.apache.commons.io.FileUtils;
 
