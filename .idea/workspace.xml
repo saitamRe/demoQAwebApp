@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90102ce4-5666-413b-ba3f-4e461e9a5b9c" name="Changes" comment="screenShotMakerDraft">
-      <change afterPath="$PROJECT_DIR$/src/main/java/demoQA/Reports/ExtentReporterNG.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demoQATests/TestComponents/Listeners.java" afterDir="false" />
+    <list default="true" id="90102ce4-5666-413b-ba3f-4e461e9a5b9c" name="Changes" comment="testNgListeners">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/data/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoQATests/data/DataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/data/PurchaseOrder.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoQATests/data/PurchaseOrder.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demoQATests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoQATests/TestComponents/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demoQATests/Tests/DemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoQATests/Tests/DemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/demoQATests/TestComponents/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/demoQATests/TestComponents/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSuites/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +40,16 @@
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/saitamRe/demoQAwebApp.git&quot;,
     &quot;accountId&quot;: &quot;2f133b0c-2ecf-40d2-959b-3002dec9dd5a&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;saitamRe&quot;,
+    &quot;repository&quot;: &quot;demoQAwebApp&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -58,30 +63,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.AppTest (1).executor": "Coverage",
-    "JUnit.AppTest.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.C:/Users/ROKO000000100/AppData/Local/JetBrains/IdeaIC2024.2/temp-testng-customsuite.xml.executor": "Run",
-    "TestNG.C:/Users/ROKO000000100/IdeaProjects/demoQA/src/test/resources/testng.xml.executor": "Run",
-    "TestNG.DemoTest.executor": "Debug",
-    "TestNG.DemoTest.someTest.executor": "Run",
-    "TestNG.demoJavaProjects.executor": "Run",
-    "TestNG.demoTest1.executor": "Debug",
-    "git-widget-placeholder": "RomaLenovo",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ROKO000000100/IdeaProjects/demoQA/src/main/java/pageobjects",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.69425285",
-    "settings.editor.selected.configurable": "Errors"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.AppTest (1).executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.AppTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.C:/Users/ROKO000000100/AppData/Local/JetBrains/IdeaIC2024.2/temp-testng-customsuite.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/ROKO000000100/IdeaProjects/demoQA/src/test/resources/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/ROKO000000100/IdeaProjects/demoQA/testSuites/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.DemoTest.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.DemoTest.someTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.demoJavaProjects.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.demoTest1.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;RomaLenovo&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ROKO000000100/IdeaProjects/demoQA/src/main/java/pageobjects&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.69425285&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pageobjects" />
@@ -91,6 +97,7 @@
       <recent name="C:\Users\ROKO000000100\IdeaProjects\demoQA\src\test\java\demoJavaProjects" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ROKO000000100\IdeaProjects\demoQA\testSuites" />
       <recent name="C:\Users\ROKO000000100\IdeaProjects\demoQA\src\main\java\demoQA\Reports" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -101,7 +108,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/ROKO000000100/IdeaProjects/demoQA/src/test/resources/testng.xml">
+  <component name="RunManager" selected="TestNG.C:/Users/ROKO000000100/IdeaProjects/demoQA/testSuites/testng.xml">
     <configuration name="C:/Users/ROKO000000100/AppData/Local/JetBrains/IdeaIC2024.2/temp-testng-customsuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="demoQA" />
       <option name="SUITE_NAME" value="$USER_HOME$/AppData/Local/JetBrains/IdeaIC2024.2/temp-testng-customsuite.xml" />
@@ -117,6 +124,16 @@
     <configuration name="C:/Users/ROKO000000100/IdeaProjects/demoQA/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="demoQA" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/ROKO000000100/IdeaProjects/demoQA/testSuites/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="demoQA" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testSuites/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -155,29 +172,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demoJavaProjects" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="demoQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demoJavaProjects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="demoJavaProjects" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/ROKO000000100/IdeaProjects/demoQA/testSuites/testng.xml" />
         <item itemvalue="TestNG.C:/Users/ROKO000000100/IdeaProjects/demoQA/src/test/resources/testng.xml" />
         <item itemvalue="TestNG.DemoTest" />
         <item itemvalue="TestNG.DemoTest.someTest" />
         <item itemvalue="TestNG.C:/Users/ROKO000000100/AppData/Local/JetBrains/IdeaIC2024.2/temp-testng-customsuite.xml" />
-        <item itemvalue="TestNG.demoJavaProjects" />
       </list>
     </recent_temporary>
   </component>
@@ -254,8 +255,21 @@
       <option name="project" value="LOCAL" />
       <updated>1746610064109</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="testNgListeners">
+      <option name="closed" value="true" />
+      <created>1746952581088</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746952581088</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava3:rxjava" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="OPEN_GENERIC_TABS">
@@ -296,7 +310,8 @@
     <MESSAGE value="morePoms + basic infrastructure" />
     <MESSAGE value="superSmallFixFOrjenkins" />
     <MESSAGE value="screenShotMakerDraft" />
-    <option name="LAST_COMMIT_MESSAGE" value="screenShotMakerDraft" />
+    <MESSAGE value="testNgListeners" />
+    <option name="LAST_COMMIT_MESSAGE" value="testNgListeners" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demoQA$AppTest__1_.ic" NAME="AppTest (1) Coverage Results" MODIFIED="1745152366536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">

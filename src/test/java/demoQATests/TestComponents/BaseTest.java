@@ -8,6 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -26,15 +27,15 @@ public class BaseTest {
         FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\demoQA\\resources\\GlobalData.properties");
         props.load(fis);
 
-
-        String browserName = props.getProperty("browser");
+        String browserName = System.getProperty("browser") != null ?  System.getProperty("browser") : props.getProperty("browser");
 
         if (browserName.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
 
         } else if (browserName.equalsIgnoreCase("firefox")) {
-            //use firefox
+            WebDriverManager.firefoxdriver().setup();
+            driver = new FirefoxDriver();
         }
 
         driver.manage().window().maximize();
